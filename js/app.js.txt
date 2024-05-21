@@ -1,5 +1,3 @@
-// app.js
-
 document.getElementById('preferences-form').addEventListener('submit', generateMenu);
 document.getElementById('fridge-form').addEventListener('submit', findRecipes);
 
@@ -58,4 +56,11 @@ function getSupermarketOffers() {
         <ul>
             <li>Supermercado A: Tomates a 1€/kg</li>
             <li>Supermercado B: Pollo a 3€/kg</li>
-            <li>Supermercado C: Queso a 2€/200g</li
+            <li>Supermercado C: Queso a 2€/200g</li>
+        </ul>
+    `;
+
+    supermarketOutput.innerHTML = offers;
+}
+
+document.addEventListener('DOMContentLoaded', getSupermarketOffers);
